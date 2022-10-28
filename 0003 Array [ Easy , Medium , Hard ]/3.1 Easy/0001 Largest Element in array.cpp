@@ -8,9 +8,9 @@ public:
     int largest(vector<int> &arr, int n)
     {
         int maxi = INT_MIN;
-        for(auto itr : arr)
+        for (auto itr : arr)
         {
-            maxi = max(maxi,itr);
+            maxi = max(maxi, itr);
         }
         return maxi;
     }
@@ -23,7 +23,7 @@ class Solution
 public:
     int largest(vector<int> &arr, int n)
     {
-        return *max_element(begin(arr),end(arr));
+        return *max_element(begin(arr), end(arr));
     }
 };
 
@@ -34,7 +34,7 @@ class Solution
 public:
     int largest(vector<int> &arr, int n)
     {
-        sort(begin(arr),end(arr));
-        return arr[arr.size()-1];
+        sort(begin(arr), end(arr));
+        return arr[arr.size() - 1];
     }
 };
